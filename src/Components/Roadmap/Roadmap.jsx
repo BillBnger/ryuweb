@@ -3,7 +3,6 @@ import ScrollAnimation from "react-animate-on-scroll";
 import Phase1Img from "../../assets/images/dragon1.png";
 import Phase2Img from "../../assets/images/dragon2.png";
 import Phase3Img from "../../assets/images/dragon3.png";
-import Phase4Img from "../../assets/images/roadmap/phase4.png";
 import "./roadmap.css";
 import { RoadmapItem } from "./RoadmapItem";
 

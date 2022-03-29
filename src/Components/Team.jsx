@@ -129,7 +129,7 @@ export const Team = () => {
                           <div className="product_info team-item-info">
                             <h2 className="team-name">{member.name}</h2>
                             <p className="team-position">{member.position}</p>
-                            <p>
+                            {/* <p>
                               <a
                                 className="no-decoration"
                                 href="#"
@@ -141,7 +141,7 @@ export const Team = () => {
                                   aria-hidden="true"
                                 ></i>
                               </a>
-                            </p>
+                            </p> */}
                           </div>
                         </div>
                       </ScrollAnimation>

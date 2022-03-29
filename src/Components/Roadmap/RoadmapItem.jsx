@@ -4,7 +4,6 @@ import { useWindowWidth } from "../../services/common_services";
 export const RoadmapItem = (props) => {
   const {
     title,
-    progress = "0",
     line1,
     line2,
     line3,
