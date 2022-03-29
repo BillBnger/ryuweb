@@ -51,7 +51,7 @@ export const RoadmapItem = (props) => {
             <div className="col-md-12 text-right">
               {image !== "" && (
                 <div className="image-responsive">
-                  <img src={`${image}`} alt="" />
+                  <img src={`${image}`} alt="" className="image-width" />
                 </div>
               )}
             </div>

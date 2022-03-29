@@ -18,6 +18,9 @@
   font-size: 16px;
   line-height: 30px;
 }
+.image-width{
+  width: 60%;
+}
 
 .timeline {
   position: relative;
