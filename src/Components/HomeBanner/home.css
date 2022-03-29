@@ -18,8 +18,9 @@
     line-height: 25.02px;
   }
   #home {
-    min-height: 800px;
-    height: 800px;
+    min-height: 135px;
+    height: 135px;
+    margin-top: 16% !important;
   }
   .home-banner {
     padding-top: 120px;

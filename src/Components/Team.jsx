@@ -17,19 +17,24 @@ export const Team = () => {
         image: Team1,
       },
       {
-        name: "Charles",
-        position: "Investor",
+        name: "Max",
+        position: "Creative content",
         image: Team2,
       },
       {
-        name: "Flou",
-        position: "Investor",
+        name: "Holger",
+        position: "Artist",
         image: Team3,
       },
       {
-        name: "Max",
-        position: "Social Media Expert",
+        name: "Charly",
+        position: "Investor",
         image: Team4,
+      },
+      {
+        name: "Flo",
+        position: "Investor",
+        image: Team2,
       },
     ];
   }, []);

@@ -318,7 +318,9 @@ hr {
   .navbar {
     float: right !important;
   }
-
+ul{
+  list-style-type: none !important;
+}
   h1.main-heading {
     font-weight: 800;
     font-size: 28px;
