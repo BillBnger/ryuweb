@@ -1,9 +1,6 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import BullImg1 from "../assets/images/dragon1.png";
-import BullImg2 from "../assets/images/dragon2.png";
-import BullImg3 from "../assets/images/dragon3.png";
-import BullImg4 from "../assets/images/dragon4.png";
 
 export const JoinBoars = () => {
   return (

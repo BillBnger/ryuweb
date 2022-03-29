@@ -3,12 +3,7 @@ import ScrollAnimation from "react-animate-on-scroll";
 import { Accordion } from "react-bootstrap";
 
 export const Faqs = () => {
-  const content = (
-    <p>
-      It's a digital asset that represents real world objects & services like
-      art, music, and games online.
-    </p>
-  );
+
   const items = [
     {
       title: "What are NFT?",

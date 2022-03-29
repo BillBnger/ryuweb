@@ -17,7 +17,7 @@ export const Footer = () => {
               style={{ maxWidth: "135px" }}
             >
               <i class="fab fa-discord fa-2x" aria-hidden="true"></i>
-              Discord
+              &nbsp; Discord
             </a>
           </div>
         </div>
