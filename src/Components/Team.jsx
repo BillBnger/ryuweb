@@ -28,12 +28,12 @@ export const Team = () => {
       },
       {
         name: "Charly",
-        position: "Investor",
+        position: "Marketing Manager",
         image: Team4,
       },
       {
         name: "Flo",
-        position: "Investor",
+        position: "J. Marketing Manager",
         image: Team2,
       },
     ];

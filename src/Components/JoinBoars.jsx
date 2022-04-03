@@ -51,7 +51,7 @@ export const JoinBoars = () => {
                   The only thing missing was an artist, but it didn't take long until we were able to find one. We gave him a gist of our vision and he absolutely killed it. Here's what he came up with.
                 </p>
                 <p>
-                  Not long after the digital version followed. We decided to put scales over the entire body and now the final product looks like this (the finished one).
+                  Not long after the digital version followed. We decided to put scales over the entire body and now we have the final product.
                 </p>
               </div>
             </ScrollAnimation>
