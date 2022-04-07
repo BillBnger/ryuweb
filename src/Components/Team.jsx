@@ -36,6 +36,11 @@ export const Team = () => {
         position: "J. Marketing Manager",
         image: Team2,
       },
+      {
+        name: "Kristin",
+        position: "Social Media Consultant",
+        image: Team3,
+      },
     ];
   }, []);
 
