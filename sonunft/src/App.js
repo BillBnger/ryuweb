@@ -11,7 +11,7 @@ function App() {
     <React.Fragment>
       <Navbar />
       <Herosection />
-      <AnimatedNfts />
+      {/* <AnimatedNfts /> */}
       <MeetTheLegend />
       <Faqs />
       <Footer />
