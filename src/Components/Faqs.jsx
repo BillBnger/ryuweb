@@ -16,8 +16,8 @@ export const Faqs = () => {
     },
     {
       title: "How can I buy RyuWorld NFTs?",
-      content: <p>The Mint starts on May 1st, 2022. You need a place on the whitelist and a Metamask wallet.
-        From May 3rd, 2022 everyone can purchase our NFT's.</p>,
+      content: <p>The Mint starts on May 9th, 2022. You need a place on the whitelist and a Metamask wallet.
+        From May 10th, 2022 everyone can purchase our NFT's.</p>,
     },
     {
       title: "Who are RyuWorld and what is our plan?",

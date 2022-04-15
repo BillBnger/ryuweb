@@ -1,4 +1,5 @@
 import React from "react";
+import NFT from "../assets/images/nft.png";
 
 export const Footer = () => {
   return (
@@ -19,6 +20,10 @@ export const Footer = () => {
               <i class="fab fa-discord fa-2x" aria-hidden="true"></i>
               &nbsp; Discord
             </a>
+
+          </div>
+          <div className="col-md-12 center justify-content-center d-flex">
+          <img style={{ maxWidth: "350px", paddingTop:"50px" }} alt="about" src={NFT} />
           </div>
         </div>
         <hr />
