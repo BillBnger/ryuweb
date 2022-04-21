@@ -23,7 +23,13 @@ export const Footer = () => {
 
           </div>
           <div className="col-md-12 center justify-content-center d-flex">
+          <a
+              href="https://nftcalendar.io/"
+              target={"_blank"}
+              rel="noopener noreferrer nofollow"
+              >
           <img style={{ maxWidth: "350px", paddingTop:"50px" }} alt="about" src={NFT} />
+          </a>
           </div>
         </div>
         <hr />
