@@ -1,0 +1,756 @@
+body {
+  font-family: "HelveticaNowDisplay-Medium", sans-serif !important;
+  background-color: #000;
+  color: #000;
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
+
+.logo_container img {
+  max-width: 90px;
+}
+
+iframe {
+  position: absolute !important;
+}
+p a {
+  border-bottom: 0px;
+}
+.red {
+  color: red !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.container {
+  max-width: 1300px;
+}
+
+.header {
+  z-index: 99999 !important;
+}
+.home-banner-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37.54px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-bottom: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mint-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  border: 2px solid lightgray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+h1.main-heading {
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 58px;
+  margin-bottom: 50px;
+}
+h2.primary-heading {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 58px;
+  margin-bottom: 40px;
+}
+#home {
+  min-height: 800px;
+}
+.section {
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+.section__mobi {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+button.btn-opensea {
+  border-radius: 6px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+}
+button {
+  cursor: pointer;
+}
+button.btn-sm {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+.center {
+  text-align: center;
+}
+.team-item-info {
+  margin-top: 60px;
+}
+p.text-white,
+p {
+  font-family: "HelveticaNowDisplay-Medium", sans-serif !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 160%;
+  color: #fff;
+  font-weight: 400;
+}
+.social-items li {
+  padding-left: 10px;
+}
+a,
+a:hover {
+  color: #257222;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+.btn.btn-social .instagram {
+  fill: #257222;
+}
+.btn.btn-social svg {
+  max-width: 24px;
+}
+.btn.btn-social i {
+  font-size: 24px !important;
+}
+.btn.btn-social:hover .instagram {
+  fill: #fff;
+}
+.btn.btn-social:hover {
+  background-color: #257222 !important;
+  color: #fff !important;
+}
+a.social-link {
+  color: #257222;
+}
+a.social-link i {
+  font-size: 22px;
+}
+.btn.btn-social {
+  color: #257222;
+  background-color: #fff;
+  padding: 5px;
+}
+
+/* .team-item {
+  max-width: 300px;
+} */
+.team-item img {
+  border-radius: 50%;
+  padding: 0.15rem;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+.pr-30 {
+  padding-right: 30px;
+}
+.timeline-item .content-box {
+  border: 2px solid;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(69.8px);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+}
+
+.timeline-item .border-right {
+  padding-right: 40px;
+}
+.timeline-item .border-left {
+  padding-left: 80px;
+}
+.accordion-item {
+  margin: 25px 0px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.accordion-header {
+  margin-bottom: 0px;
+}
+.accordion-item button.accordion-button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 13px 35px;
+  display: flex;
+  width: 100%;
+  text-align: left;
+  border-radius: 10px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.section-space-right {
+  padding-right: 5%;
+}
+.accordion-body {
+  padding: 10px 40px;
+  color: #000;
+}
+.accordion-body p {
+  padding: 10px 40px;
+  color: #000;
+}
+.header {
+  /* background-color: #07090c; */
+  background-color: transparent;
+  color: #fff;
+  position: fixed;
+}
+.header.header-scroll {
+  background-color: #07090c;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.15);
+}
+.header .main_nav_container {
+  background-color: transparent;
+  color: #fff;
+  box-shadow: none;
+}
+.navbar_menu li a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.contact-us {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 49px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.53);
+}
+
+.hidden {
+  display: none;
+}
+.open-icon,
+.close-icon {
+  background: #fff;
+  color: #000;
+  padding: 5px 6px;
+  border-radius: 50%;
+  font-size: 16px;
+  float: right;
+}
+.accordion-button[aria-expanded="true"] .open-icon {
+  display: none;
+}
+.accordion-button[aria-expanded="true"] .close-icon {
+  display: block;
+}
+.accordion-collapse collapse .App {
+  text-align: center;
+}
+.roadmap-item-heading {
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 43px;
+}
+.timeline-item p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.team-name {
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  background-color: rgba(255, 255, 255, 0.4);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 3px;
+  border-radius: 10px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 5px 5px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-dot-content {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: -42px;
+  height: 100%;
+  font-size: 12px!important;
+}
+.timeline-dot-content .sticky-dot {
+  position: sticky;
+  width: 40px;
+  height: 40px;
+  right: -42px;
+  background-color: white;
+  border: 4px solid #fff;
+  color: #000;
+  border-radius: 50%;
+  z-index: 1;
+  margin-bottom: 9px;
+  top: 12vh;
+}
+
+/* Place the container to the left */
+.timeline .left {
+  left: 0;
+  
+}
+
+/* Place the container to the right */
+.timeline .right {
+  left: 50%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline .right::before {
+}
+
+/* Fix the circle for containers on the right side */
+.timeline right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.timeline .row,
+.timeline .animated {
+  width: 100%;
+}
+.timeline .timeline-item:last-child {
+}
+
+.accordion-body p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#roadmap2 .timeline-container::after {
+  display: none;
+}
+.spinal-fox-team-img img {
+  margin-top: 32px;
+}
+.overlay-container {
+  position: absolute;
+  top: 120px;
+  right: 0px;
+}
+.videoWrapper video {
+  max-height: 810px;
+  object-fit: cover;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.videoWrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  z-index: 0;
+  margin-top: -100px;
+  max-height: 800px;
+}
+.video-text-container {
+  z-index: 99;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+.mobile-show {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    float: right !important;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+  .nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-container .mobile-show.social {
+    margin-left: 30%;
+  }
+
+  .logo_container img {
+    max-width: 60px;
+  }
+
+  h1.main-heading {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  h2.primary-heading {
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 21.9px;
+    font-weight: 400;
+  }
+
+  .header.header-scroll {
+    background-color: #07090c;
+  }
+
+  .header .main_nav_container {
+    background-color: transparent;
+    z-index: 999;
+  }
+  .home-banner-text {
+    font-size: 16px;
+    line-height: 25.02px;
+  }
+  .section {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .section-part {
+    margin-bottom: 30px;
+  }
+  button.btn-opensea {
+    border-radius: 6px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 45px;
+  }
+  #home {
+    min-height: 600px;
+    height: 600px;
+  }
+  .spinal-fox-img img {
+    width: 90%;
+  }
+  .spinal-fox-team-img-div {
+    padding: 0px;
+  }
+  .spinal-fox-team-img img {
+    width: 108%;
+    margin-left: -15px;
+    margin-top: 75px;
+  }
+  .team-name {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+  }
+  .team-item {
+    width: 50%;
+  }
+  .team-item-info {
+    margin-top: 30px;
+  }
+  .timeline::after {
+    width: 6px;
+    left: 0;
+  }
+  .timeline-dot-content {
+    left: 14px;
+    width: 42px;
+    height: 42px;
+  }
+  .timeline-item .content-box {
+    margin-left: 80px;
+    border: 1px solid;
+    width: 77%;
+  }
+  .timeline-item p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .roadmap-item-heading {
+    font-size: 20px;
+    line-height: 43px;
+  }
+  .roadmap-item-part {
+    margin-bottom: 30px;
+  }
+  .timeline .row {
+    width: auto;
+  }
+  .roadmap-item-part ul {
+    text-align: left;
+  }
+  .react-multi-carousel-item {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .react-multi-carousel-item .team-item {
+    width: 153px;
+  }
+  .collection-box {
+    padding: 15px;
+  }
+  .accordion-item {
+    border-radius: 5px;
+  }
+  .accordion-item button.accordion-button {
+    font-size: 14px;
+    line-height: 25px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .open-icon,
+  .close-icon {
+    font-size: 14px;
+    padding: 2px 3px;
+  }
+  .accordion-body {
+    padding: 5px 15px;
+  }
+  .accordion-body p {
+    text-align: left;
+  }
+  
+  .hide-mobile {
+    display: none;
+  }
+  .hamburger_container,
+  .hamburger_container i {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .hamburger_container {
+    margin-left: 5px;
+  }
+  .hamburger_menu {
+    height: auto;
+    padding-bottom: 30px;
+    z-index: 9999;
+  }
+  .hamburger_menu_content {
+    padding-left: 15px;
+    padding-top: 70px;
+  }
+  p.contact-us {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+}
+.header.header-scroll {
+  overflow: hidden;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .timeline .left::after,
+  .timeline .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .timeline .right {
+    left: 0%;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #07090c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* .App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+.social__box{
+
+    display: flex;
+    position: absolute;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    padding: 30px;
+    top: 38%;
+    right: 0;
+    transform: translateY(-50%);
+    overflow: hidden;
+
+}
+.top__social__icons{
+
+    
+    cursor: pointer;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+
+}
+
+.top__social__icons a {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+  border:1px solid rgba(255, 255, 255, 0.3);;
+  display: block;
+  background-repeat: no-repeat;
+  transition:all ease-in-out 0.2s;
+}
+.top__social__icons a:hover {
+  fill: #ff22ff!important;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: block;
+  transition:all ease-in-out 0.3s;
+  margin-right: 10px;
+}
+.css-1ab2xsx{
+  background-color: #121212!important;
+}
+
+.roadmap__card__size{
+  border: 1px solid #fff!important;
+}
+
+.about__custom{
+  width: 90%;
+  margin: 0 auto;
+}
+

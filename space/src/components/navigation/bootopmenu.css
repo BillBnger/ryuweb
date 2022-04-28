@@ -1,0 +1,63 @@
+.offcanvas-body{
+    background: #111;
+}
+.navbar{
+    background: #000;
+    color:#fff;
+    width: 100%!important;
+    padding-left: 50px!important;
+    font-family: 'HelveticaNowDisplay-Medium', sans-serif;
+    z-index: 9999;
+}
+
+.navbar a {
+    color:#fff;
+}
+
+ul.off__menu{
+    list-style: none;
+    padding: 0;
+    margin-top: 50px!important;
+}
+ul.off__menu li{
+    padding: 10px 20px;
+    border-bottom: 1px solid #333;    
+}
+
+ul.off__menu li a {
+list-style: none;
+color:#fff;
+background-color: #000;
+font-family: arial;
+font-size: 14px;
+
+}
+.btn__menu{
+    background: #000!important;
+    margin-right: 30px;
+    border: none;
+    font-size: 30px;
+}
+.btn__menu:hover{
+    cursor: pointer;
+    background: #000;
+}
+
+
+.btn__menu:focus{
+    box-shadow: none;
+    background: #000;
+
+}
+.offcanvas-header {
+    background: #222!important;
+}
+.close__btn{
+color: #fff;  
+font-size: 30px;  
+cursor: pointer;
+transition: all 0.2s ease-in-out;
+}
+.css-1160xiw-MuiPaper-root-MuiDrawer-paper {
+    background-color: #121212!important;
+}

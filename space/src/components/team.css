@@ -1,0 +1,123 @@
+.react-multiple-carousel__arrow--left {
+  left: 0 !important;
+}
+.react-multiple-carousel__arrow--right {
+  right: 0 !important;
+}
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+}
+.team-item-info {
+  opacity: 0;
+}
+a.dec {
+  font-size: 14px;
+}
+a.dec:hover {
+  background: transparent !important;
+  color: #257222 !important;
+}
+.react-multi-carousel-item {
+  /* padding-left: 60px;
+  padding-right: 60px; */
+  display: flex;
+  justify-content: center;
+}
+.team-item {
+  padding-top: 100px;
+}
+.react-multi-carousel-item .team-item {
+  width: 275px;
+}
+ul.react-multi-carousel-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-slider
+  .react-multi-carousel-item--active.bigger-team-item
+  .team-item-info {
+  opacity: 1;
+}
+.team-slider
+  .react-multi-carousel-item.react-multi-carousel-item--active.bigger-team-item {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.team-socials a {
+  color: #fff;
+}
+.team-socials i.fa {
+  font-size: 24px;
+}
+
+@media screen and (min-width: 800px) {
+  .team-slider .react-multi-carousel-item--active.bigger-team-item {
+    /* width: 350px; */
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.team-slider .react-multi-carousel-item {
+  width: 350px;
+  -webkit-transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width: 600px) {
+  .react-multi-carousel-item .team-item {
+    width: 153px;
+  }
+  /* .react-multi-carousel-item.react-multi-carousel-item--active:nth-child(2n)
+    .team-item {
+    width: 135px;
+  } */
+  .react-multi-carousel-item.react-multi-carousel-item--active .team-item-info {
+    opacity: 1;
+  }
+  .react-multi-carousel-item.react-multi-carousel-item--active .team-item {
+    width: 200px;
+  }
+}
+
+
+.team{
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+.team__heading{
+  font-size: 50px;
+  color: #000;
+}
+
+p.text02{
+  color:#000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.team__image img {margin-bottom: 10px; border-radius: 50%;}
+.team__name{
+  font-size: 16px;
+  color: #000;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.team__position{
+  font-size: 12px;
+  color: #000;
+  font-weight: 400;
+  margin-bottom: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

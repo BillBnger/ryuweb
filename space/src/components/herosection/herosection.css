@@ -1,0 +1,65 @@
+.bg{
+    background: #000;
+}
+
+.hero__img__01{
+    position: absolute;
+    text-align: center;
+    margin-left: 40%;
+}
+
+.astro-img{
+    position: absolute!important;
+    left: 50%;
+    top: 10%;
+}
+/* 
+@media (prefers-reduced-motion: no-preference) {
+    .logo-img {
+      animation: App-logo-float infinite 4s ease-in-out!important;
+      border: 1px sodlid #ff2400!important;
+    }
+  }
+
+  @keyframes App-logo-float {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY( 20px);
+      transform: translateX( 20px);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  } */
+
+.floating {
+  /* animation: float 6s ease-in-out infinite; */
+  animation-name: floating;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(20px, 15px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .astro-img{
+    position: absolute!important;
+    left: 50%;
+    top: 0%;
+    z-index: 1;
+width:50%  }
+}
