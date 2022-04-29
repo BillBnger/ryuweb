@@ -2,12 +2,12 @@ import React, { useRef } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Faqs from './components/faqs/Faqs';
 import Nav from './components/navigation/Nav';
-import DevRoadmap from './components/pagesections/DevRoadmap';
-import Features from './components/pagesections/Features';
-import GetInAction from './components/pagesections/GetInAction';
-import HeroSection from './components/pagesections/HeroSection';
-import Ourteam from './components/pagesections/Ourteam';
-import Roadmap from './components/pagesections/Roadmap';
+// import DevRoadmap from './components/pagesections/DevRoadmap';
+// import Features from './components/pagesections/Features';
+// import GetInAction from './components/pagesections/GetInAction';
+// import HeroSection from './components/pagesections/HeroSection';
+// import Ourteam from './components/pagesections/Ourteam';
+// import Roadmap from './components/pagesections/Roadmap';
 import Footer from './components/pagesections/Footer';
 import Terms from './components/termsandconditions/Terms';
 import { Mint } from './Mint/Mint';
@@ -216,6 +216,7 @@ function App() {
         <Route path='/terms' element={<Terms />} />
         {/* <Route path='/mint' element={<Mint />} /> */}
       </Routes>
+
       <Mint />
       <Footer />
       {/* <Mint /> */}
