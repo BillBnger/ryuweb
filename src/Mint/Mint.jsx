@@ -139,7 +139,7 @@ export const Mint = () => {
       _remainToken();
       setInterval(() => {
         _remainToken();
-      }, 3000);
+      }, 5000);
     }
   };
 

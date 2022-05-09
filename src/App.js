@@ -1,31 +1,20 @@
-import React from "react";
-import "./App.css";
-import { Benefits } from "./Components/Benefits";
-import { Faqs } from "./Components/Faqs";
-import { Footer } from "./Components/Footer";
-import { Header } from "./Components/Header";
-import { HomeBanner } from './Components/HomeBanner/HomeBanner';
-import { JoinBoars } from "./Components/JoinBoars";
-import { Roadmap } from "./Components/Roadmap/Roadmap";
-import { Team } from "./Components/Team";
+import React from 'react';
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import { Home } from './Components/pages/Home';
+import CenterMint from './Mint/CenterMint';
 
 class App extends React.Component {
   render() {
     return (
-      <div className="MainDiv">
-        <Header />
-        <div className="fs_menu_overlay"></div>
+      <div className='MainDiv'>
+        {/* <Header />
+        <div className='fs_menu_overlay'></div> */}
 
-        <HomeBanner />
-        {/* <BSCBanner /> */}
-        <JoinBoars />
-        <Benefits />
-
-        <Roadmap />
-        {/* <Collection /> */}
-        <Team />
-        <Faqs />
-        <Footer />
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/CenterMint' element={<CenterMint />} />
+        </Routes>
       </div>
     );
   }

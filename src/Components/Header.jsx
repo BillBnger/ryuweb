@@ -59,6 +59,11 @@ export const Header = () => {
                       Faq
                     </Link>
                   </li>
+                  <li>
+                    <a href="/CenterMint" to="/CenterMint" spy={true} smooth={true}>
+                      Mint
+                    </a>
+                  </li>
                 </ul>
                 <ul className="navbar_user hide-mobile">
                   <li>
