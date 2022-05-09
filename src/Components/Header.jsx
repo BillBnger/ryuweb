@@ -60,7 +60,7 @@ export const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="/CenterMint" to="/CenterMint" spy={true} smooth={true}>
+                    <a href="/mint" to="/mint" spy={true} smooth={true}>
                       Mint
                     </a>
                   </li>

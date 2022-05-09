@@ -4,7 +4,11 @@ import hash from "keccak256";
 import { MerkleTree } from "merkletreejs";
 import Web3 from "web3";
 import { toChecksumAddress } from "web3-utils";
-import { requiredChainId, requiredChainIdName } from "../libs/smart-contract";
+import {
+  requiredChainId,
+  requiredChainIdName
+} from "../libs/smart-contract";
+
 
 const msg_mobile = "Please use MetaMask!";
 const msg_desk = "Please intall MetaMask Wallet extension";
@@ -33,6 +37,7 @@ export const _doThis = async (todo: any = null, prompt: any = true) => {
     });
     // console.log({ chainId });
 
+    console.log(chainId === requiredChainId);
     if (chainId === requiredChainId) todo && todo(account, new Web3(ethereum));
     else alert(msg_chain);
   }

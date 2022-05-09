@@ -1,0 +1,160 @@
+.timeline-item .content-box {
+  /* border: 2px solid;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(69.8px);
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%; */
+}
+
+.timeline-item .border-right {
+  padding-right: 40px;
+}
+.timeline-item .border-left {
+  padding-left: 80px;
+}
+
+.timeline-item p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.image-width{
+  width: 60%;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+  border-right: 2px dashed #8fd401;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: 0px;
+  border-radius: 10px;
+}
+
+/* Container around content */
+.timeline-container {
+  padding: 40px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-dot-content {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -29px;
+}
+.timeline-dot-content .sticky-dot {
+  position: sticky;
+  width: 20px;
+  height: 20px;
+  right: -29px;
+  background-color: #8fd401;
+  border: 4px solid #8fd401;
+  color: #000;
+  border-radius: 50%;
+  z-index: 1;
+  margin-bottom: 9px;
+  top: 20vh;
+}
+
+/* Place the container to the left */
+.timeline .left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.timeline .right {
+  left: 50%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.timeline .right::before {
+}
+
+/* Fix the circle for containers on the right side */
+.timeline right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.timeline .content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+.timeline .row,
+.timeline .animated {
+  width: 100%;
+}
+.timeline .timeline-item:last-child {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    width: 6px;
+    left: 0;
+  }
+  .timeline-dot-content {
+    left: 24px;
+    width: 20px;
+    height: 20px;
+  }
+  .timeline-item .content-box {
+    margin-left: 80px;
+    /* border: 1px solid; */
+    width: 77%;
+  }
+  .timeline-item p {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .timeline .row {
+    width: auto;
+  }
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .timeline-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .timeline .left::after,
+  .timeline .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .timeline .right {
+    left: 0%;
+  }
+}

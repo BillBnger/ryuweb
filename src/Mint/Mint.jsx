@@ -3,7 +3,7 @@ import React, { useCallback, useEffect, useMemo, useState } from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 import { useDispatch, useSelector } from "react-redux";
 import { toChecksumAddress } from "web3-utils";
-import MintImg from "../assets/images/mint.png";
+import MintImg from "../assets/images/dragon1.png";
 import { getMerkleTree, _doThis } from "./libs/api";
 import { getContractNft } from "./libs/smart-contract";
 import "./mint.css";
@@ -15,7 +15,7 @@ export const Mint = () => {
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
 
-  const totalSupply = useMemo(() => 10000, []);
+  const totalSupply = useMemo(() => 5000, []);
   const siteTitle = useMemo(() => "MINT", []);
   const tagLine1 = useMemo(() => "", []);
   const tagLine2 = useMemo(() => "Pre-sale is active", []);
@@ -24,8 +24,8 @@ export const Mint = () => {
   const connectBtn = useMemo(() => "Connect Wallet", []);
   const mintBtn = useMemo(() => "Mint NFT", []);
 
-  const nftPrice = 0.088;
-  const maxNfts = 10;
+  const nftPrice = 0.07;
+  const maxNfts = 5;
 
   const [feedback, setFeedback] = useState("");
   const [claimingNft, setClaimingNft] = useState(false);
@@ -34,10 +34,12 @@ export const Mint = () => {
   const [remainingToken, setRemaining] = useState(0);
   const [isWhiteListed, setIsWhiteListed] = useState(true);
 
-  const _remainToken = async () => {
-    const token = getContractNft();
-    const tokenMinted = await token.methods.totalSupply().call();
-    return setRemaining(tokenMinted);
+  const _remainToken = () => {
+    _doThis(async (account, web3) => {
+      const token = getContractNft(web3);
+      const tokenMinted = await token.methods.totalSupply().call();
+      return setRemaining(tokenMinted);
+    });
   };
 
   const mintNfts = () => {
@@ -119,7 +121,7 @@ export const Mint = () => {
         setLoading(true);
         await purchase.send(options).on("confirmation", (i) => {
           setFeedback(
-            "WOW, you now own a Dysfunctional Dog. go visit Opensea.io to view it."
+            "WOW, you now own a Ryu World NFT. go visit Opensea.io to view it."
           );
           setClaimingNft(false);
           dispatch(fetchData(blockchain.account));
@@ -139,7 +141,7 @@ export const Mint = () => {
       _remainToken();
       setInterval(() => {
         _remainToken();
-      }, 5000);
+      }, 3000);
     }
   };
 
@@ -167,7 +169,7 @@ export const Mint = () => {
       <div className="row align-items-center justify-content-space-between">
         <div className="col-md-12 center mb-20">
           <h1 className="main-heading">MINT</h1>
-          <p>The BSC is a collection of 10,000 Bandit Squirrel NFT’s </p>
+          <p>The Ryu World is a collection of 5000 NFT’s </p>
         </div>
         <div className="col-md-6 section-part section-space-right">
           <ScrollAnimation animateIn="fadeIn">
@@ -190,7 +192,7 @@ export const Mint = () => {
 
                 <div className="col-md-12">
                   <h2 className="mint-heading">MINT</h2>
-                  <p>The price is {nftPrice}eth ETH + Gas fee</p>
+                  <p>The price is {nftPrice} ETH + Gas fee</p>
                   <p>
                     {remainingToken} / {totalSupply}
                   </p>
