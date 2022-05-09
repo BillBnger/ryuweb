@@ -169,6 +169,7 @@ function CenterMint() {
           //   }
           // }
 
+
           setFeedback(
             "WOW, you now own a RyuWorld. go visit Opensea.io to view it."
           );
