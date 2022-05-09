@@ -13,16 +13,16 @@ import { fetchData } from "./redux/data/dataActions";
 export const Mint = () => {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
-  const data = useSelector((state) => state.data);
+  // const data = useSelector((state) => state.data);
 
   const totalSupply = useMemo(() => 5000, []);
-  const siteTitle = useMemo(() => "MINT", []);
-  const tagLine1 = useMemo(() => "", []);
-  const tagLine2 = useMemo(() => "Pre-sale is active", []);
+  // const siteTitle = useMemo(() => "MINT", []);
+  // const tagLine1 = useMemo(() => "", []);
+  // const tagLine2 = useMemo(() => "Pre-sale is active", []);
 
-  const mintHead = useMemo(() => "MINT", []);
-  const connectBtn = useMemo(() => "Connect Wallet", []);
-  const mintBtn = useMemo(() => "Mint NFT", []);
+  // const mintHead = useMemo(() => "MINT", []);
+  // const connectBtn = useMemo(() => "Connect Wallet", []);
+  // const mintBtn = useMemo(() => "Mint NFT", []);
 
   const nftPrice = 0.07;
   const maxNfts = 5;
