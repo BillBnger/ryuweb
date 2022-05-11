@@ -60,7 +60,7 @@ export const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="https://www.google.com">
+                    <a href="https://mintryuworld.com">
                       Mint
                     </a>
                   </li>
