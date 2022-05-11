@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { Home } from './Components/pages/Home';
-import { Mint } from './Mint/Mint';
+// import { Mint } from './Mint/Mint';
 
 class App extends React.Component {
   render() {
@@ -13,7 +13,7 @@ class App extends React.Component {
 
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/mint' element={<Mint />} />
+          {/* <Route path='/mint' element={<Mint />} /> */}
         </Routes>
       </div>
     );
