@@ -30,9 +30,9 @@ export const Mint = () => {
   const [feedback, setFeedback] = useState("");
   const [claimingNft, setClaimingNft] = useState(false);
   const [mintingNft, setMintingNft] = useState(1);
-  const [loading, setLoading] = useState(false);
+  const [ setLoading] = useState(false);
   const [remainingToken, setRemaining] = useState(0);
-  const [isWhiteListed, setIsWhiteListed] = useState(true);
+  const [isWhiteListed] = useState(true);
 
   const _remainToken = () => {
     _doThis(async (account, web3) => {
