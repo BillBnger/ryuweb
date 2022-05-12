@@ -60,7 +60,7 @@ export const Header = () => {
                     </Link>
                   </li>
                   <li>
-                    <a href="https://mintryuworld.com" target="_blank">
+                    <a href="https://mintryuworld.com" target="_blank" rel="noreferrer">
                       Mint
                     </a>
                   </li>
