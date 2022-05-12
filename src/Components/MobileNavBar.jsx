@@ -23,6 +23,7 @@ export const MobileNavBar = () => {
               Roadmap
             </Link>
           </li>
+
           {/* <li className="menu_item">
             <Link href="#" to="spinal-foxes" spy={true} smooth={true}>
               Showcase
@@ -38,6 +39,11 @@ export const MobileNavBar = () => {
               Faq
             </Link>
           </li>
+          <li className="menu_item">
+                    <a href="https://mintryuworld.com" target="_blank" rel="noreferrer">
+                      Mint
+                    </a>
+                  </li>
         </ul>
       </div>
     </div>
