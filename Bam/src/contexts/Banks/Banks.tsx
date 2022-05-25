@@ -1,0 +1,51 @@
+import React, {useCallback, useEffect, useState} from 'react';
+import Context from './context';
+import useBamFinance from '../../hooks/useBamFinance';
+import {Bank} from '../../bam-finance';
+import config, {bankDefinitions} from '../../config';
+type Props = {
+  children?: React.ReactNode
+};
+const Banks: React.FC<Props> = ({children}) => {
+  const [banks, setBanks] = useState<Bank[]>([]);
+  const bamFinance = useBamFinance();
+  const isUnlocked = bamFinance?.isUnlocked;
+
+  const fetchPools = useCallback(async () => {
+    const banks: Bank[] = [];
+
+    for (const bankInfo of Object.values(bankDefinitions)) {
+      if (bankInfo.finished) {
+        if (!bamFinance.isUnlocked) continue;
+
+        // only show pools staked by user
+        const balance = await bamFinance.stakedBalanceOnBank(
+          bankInfo.contract,
+          bankInfo.poolId,
+          bamFinance.myAccount,
+        );
+        if (balance.lte(0)) {
+          continue;
+        }
+      }
+      banks.push({
+        ...bankInfo,
+        address: config.deployments[bankInfo.contract].address,
+        depositToken: bamFinance.externalTokens[bankInfo.depositTokenName],
+        earnToken: bankInfo.earnTokenName === 'BAM' ? bamFinance.BAM : bamFinance.BDAO,
+      });
+    }
+    banks.sort((a, b) => (a.sort > b.sort ? 1 : -1));
+    setBanks(banks);
+  }, [bamFinance, setBanks]);
+
+  useEffect(() => {
+    if (bamFinance) {
+      fetchPools().catch((err) => console.error(`Failed to fetch pools: ${err.stack}`));
+    }
+  }, [isUnlocked, bamFinance, fetchPools]);
+
+  return <Context.Provider value={{banks}}>{children}</Context.Provider>;
+};
+
+export default Banks;
